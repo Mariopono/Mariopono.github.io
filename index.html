@@ -1,42 +1,26 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es">
 <head>
-  <title>PornHub</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link rel="icon" type="image/png" href="/assets/pornhub.png">
-  <style>
-        body {
-            background-image: url("/assets/fondo-vector.avif");
-            background-repeat: repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-  </style>
+  <meta charset="UTF-8">
+  <title>Página de Login y Registro</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>PornHub</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="/pagina/fotos.html">Fotos</a></li>
-      <li><a href="/pagina/videos.html">Videos</a></li>
-      <li><a href="/pagina/gifs.html">GIFs</a></li>
-    </ul>
-  </nav>
-  
- <section>
-  <h1>¡Bienvenido a esta web de porno!</h1>
-  <h2>Explora nuestras diferentes secciones de porno:</h2>
-  
-  <div class="button-container">
-    <a href="/pagina/fotos.html"><button>Fotos</button></a>
-    <a href="/pagina/videos.html"><button>Videos</button></a>
-    <a href="/pagina/gifs.html"><button>GIFs</button></a>
+  <div class="container">
+    <h1>Bienvenido</h1>
+    <div id="login-form" class="form">
+      <h2>Login</h2>
+      <input type="text" id="login-username" placeholder="Usuario">
+      <input type="password" id="login-password" placeholder="Contraseña">
+      <button onclick="login()">Iniciar sesión</button>
+    </div>
+    <div id="register-form" class="form">
+      <h2>Registro</h2>
+      <input type="text" id="register-username" placeholder="Usuario">
+      <input type="password" id="register-password" placeholder="Contraseña">
+      <button onclick="register()">Registrarse</button>
+    </div>
   </div>
- </section>
-  
+
   <script src="script.js"></script>
 </body>
-</html>
