@@ -10,7 +10,7 @@ function login(event) {
 
   // Si la autenticación es exitosa, redirige al usuario al otro index.html
   if (autenticacionExitosa) {
-    window.location.href = "inicio.html";
+    window.location.href = "/pagina/inicio.html";
   }
 }
 
@@ -28,5 +28,5 @@ function register(event) {
   // ...
 
   // Redirige al usuario al otro index.html después del registro exitoso
-  window.location.href = "inicio.html";
+  window.location.href = "/pagina/inicio.html";
 }
